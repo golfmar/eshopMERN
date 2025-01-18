@@ -1,0 +1,61 @@
+@import "../../scss//common/colors.scss";
+.productList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0 0 0;
+}
+.productItem {
+  display: grid !important;
+  grid-template-columns: 42% 1fr;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  padding: 20px 15px;
+}
+
+.productImage {
+  aspect-ratio: 1.9 / 1;
+  height: auto;
+  max-height: 280px;
+  max-width: 533px;
+}
+.productContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  height: 100%;
+  .deliteButton {
+    cursor: pointer;
+    color: $act !important;
+    font-weight: 600;
+    width: fit-content;
+    margin: auto 0 0 0;
+  }
+}
+.cardPrice {
+  display: grid;
+  grid-template-columns: 22px 20px 22px;
+  align-items: center;
+  justify-items: center;
+  gap: 15px;
+
+  span {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 22 px;
+    font-weight: 600;
+    border: 2px solid $a3;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    &:first-of-type {
+      color: $btn;
+    }
+    &:last-of-type {
+      color: $blue;
+    }
+  }
+}

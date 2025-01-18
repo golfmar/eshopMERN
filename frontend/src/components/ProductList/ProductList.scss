@@ -1,0 +1,66 @@
+@import "../../scss/common/colors.scss";
+
+.Allproducts {
+  margin: 30px 0 0 0;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 30px;
+}
+
+.Allproducts-container {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 570px);
+  justify-content: center;
+  position: relative;
+  padding: 0 0 70px 0;
+}
+
+
+
+.pagination {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+
+
+.filterContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 20px 0 0 0;
+
+  p {
+    margin: 0 0 0 0;
+  }
+}
+
+@media (max-width: 920px) {
+  .Allproducts {
+    margin: 30px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .Allproducts-container {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    position: relative;
+  }
+
+  .filterContainer {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+
+}

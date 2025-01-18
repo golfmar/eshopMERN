@@ -1,0 +1,64 @@
+@import "../../scss/common/colors.scss";
+
+.header {}
+
+.cart-icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  max-width: 25px;
+
+  &:hover {
+    color: $hov;
+  }
+}
+
+.user-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cart-badge {
+  position: absolute;
+  z-index: 5;
+  top: -10px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  color: white;
+  border-radius: 50%;
+  background: #ff4141;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+  padding: 4px 0 0 0;
+}
+
+.cart-icon {
+  transition: all 0.3s !important;
+}
+
+@media (max-width: 920px) {
+  .logo {
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+
+@media (max-width: 900px) {
+  .cart-icon {
+    margin: 10px 0 0 10px;
+  }
+
+  .toolbar {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}

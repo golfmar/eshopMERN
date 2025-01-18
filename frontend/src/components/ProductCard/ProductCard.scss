@@ -1,0 +1,70 @@
+@import "../../scss/common/colors.scss";
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 0 0 0 !important;
+}
+
+.productCard {
+  padding: 10px 15px;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  gap: 20px;
+  align-items: center;
+
+  img {
+    aspect-ratio: 1.5 / 1;
+    height: auto;
+    transition: all 0.2s;
+    max-height: 300px;
+    object-fit: contain;
+
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+
+  h5 {
+    margin: 0 0 20px 0;
+    color: $blue;
+
+    &:hover {
+      transition: all ease 0.2s;
+      color: $hov;
+    }
+  }
+
+  .cardPrice {
+    margin: 10px 0 0 0;
+  }
+
+  .cardLink {}
+
+  .addToCartButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .deliteCard {
+    margin-top: auto;
+    color: $act !important;
+    width: 20px;
+    height: 20px;
+
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 920px) {
+  .productCard img {
+    max-height: 176px;
+  }
+}

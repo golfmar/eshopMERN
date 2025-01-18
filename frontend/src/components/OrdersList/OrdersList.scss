@@ -1,0 +1,16 @@
+@import "../../scss/common/colors.scss";
+@media (max-width: 900px) {
+
+  .tableHead,
+  .tableRow {
+    display: flex !important;
+    flex-direction: column;
+    padding: 0 0 0 0 !important;
+
+  }
+
+  .tableBody .MuiTableRow-root {
+    padding: 5px !important;
+    border: 2px solid $border !important;
+  }
+}

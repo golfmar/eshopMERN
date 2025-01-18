@@ -1,0 +1,41 @@
+@import "../../scss/common/colors.scss";
+
+.productDetails {
+  &__header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    align-items: center;
+
+    gap: 40px;
+    margin: 20px 0 0 0;
+
+    img {
+      border: 1px solid $border;
+      border-radius: 5px;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    padding: 0 20% 0 0;
+  }
+  .addToCart {
+    margin: auto 0 0 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+}
+@media (max-width: 767px) {
+  .productDetails__content {
+    grid-template-columns: 1fr;
+  }
+}

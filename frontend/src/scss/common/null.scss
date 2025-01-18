@@ -1,0 +1,150 @@
+* {
+  padding: 0px;
+  margin: 0;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html {
+  // height: 100%;
+  max-width: 100vw;
+}
+
+body {
+  // height: 100%;
+  max-width: 100vw;
+  text-size-adjust: 100%;
+  
+}
+
+input,
+button,
+textarea {
+  resize: none;
+}
+
+input {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  display: block;
+}
+
+
+a {
+  text-decoration: none !important;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+a:visited {
+  text-decoration: none !important;
+}
+
+img {
+  vertical-align: top;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+audio,
+video {
+  // max-width: 100%;
+  height: auto;
+}
+
+audio,
+canvas,
+iframe,
+video,
+img,
+svg {
+  vertical-align: middle;
+}
+
+iframe {
+  border: 0;
+}
+
+textarea {
+  resize: none;
+  /*remove the resize handle on the bottom right */
+  overflow: auto;
+  vertical-align: top;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+  border: none;
+  font-size: 100%;
+  margin: 0;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
+}

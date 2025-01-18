@@ -1,0 +1,36 @@
+.admin {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+
+  .content {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 20px 30px;
+  }
+
+  .Allproducts {
+    grid-template-columns: 1fr;
+  }
+
+  .adminMenu {
+    li {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &>.MuiPaper-root {
+      position: relative !important;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .admin {
+    grid-template-columns: 1fr;
+    margin: 90px 10px;
+  }
+
+  .admin .content {
+    padding: 20px 10px;
+  }
+}
